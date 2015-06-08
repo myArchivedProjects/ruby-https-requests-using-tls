@@ -5,24 +5,11 @@
 # https://www.howsmyssl.com/
 # http://apidock.com/ruby/OpenSSL/SSL/SSLContext
 
-# gem install bundle
-#
-# cat > Gemfile <<EOF
-# source "https://rubygems.org"
-# gem 'net'
-# gem 'json'
-# EOF
-#
-# bundle install
-# buundle exec ruby thisfile.rb
-
 require 'rubygems'
 require 'uri'
 require 'net/http'
 require 'openssl'
 require 'json'
-
-
 
 def test_ssl_connection(url, json=false)
   uri = URI(url)
